@@ -83,13 +83,13 @@ function Header({
       {
         key: 'new',
         icon: <FileAddOutlined />,
-        label: 'New File',
+        label: '新檔案',
         onClick: onNewFile
       },
       {
         key: 'open',
         icon: <FolderOpenOutlined />,
-        label: 'Open File',
+        label: '打開檔案',
         onClick: onOpenFile
       },
       {
@@ -98,7 +98,7 @@ function Header({
       {
         key: 'save',
         icon: <SaveOutlined />,
-        label: 'Save File',
+        label: '保存檔案',
         onClick: onSaveFile,
         disabled: !hasUnsavedChanges
       }
@@ -134,7 +134,7 @@ function Header({
           icon={<SaveOutlined />}
           onClick={onSaveFile}
           theme={theme}
-          title="Save current file"
+          title="保存当前档案"
           disabled={!hasUnsavedChanges}
         >
           {hasUnsavedChanges && <span style={{ 
